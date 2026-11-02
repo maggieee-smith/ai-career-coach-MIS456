@@ -7,7 +7,7 @@ import streamlit as st
 from core import config, gamify, nav, state, theme
 from views import cover_letter, dashboard, home, interview, job_explorer, matches, progress, quiz, resume_review
 
-st.set_page_config(page_title="AI Career Coach", page_icon="assets/icon.svg", layout="wide")
+st.set_page_config(page_title="AI Career Coach", page_icon="assets/icon.svg", layout="wide", initial_sidebar_state="expanded")
 theme.apply()
 
 P = {
