@@ -32,7 +32,8 @@ html, body, .stApp, .stMarkdown, p, li, label, input, textarea, [data-testid="st
   color: {INK};
 }}
 [data-testid="stHeader"] {{ background: transparent; }}
-[data-testid="stToolbar"], [data-testid="stAppDeployButton"], footer {{ display: none !important; }}
+[data-testid="stAppDeployButton"], [data-testid="stMainMenu"], footer {{ display: none !important; }}
+[data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"] {{ display: flex !important; visibility: visible !important; }}
 [data-testid="stMainBlockContainer"] {{ padding-top: 2.2rem; max-width: 1180px; }}
 
 /* Headings */
