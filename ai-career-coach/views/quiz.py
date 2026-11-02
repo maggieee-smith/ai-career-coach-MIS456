@@ -110,8 +110,11 @@ def render():
 
     careers = MAJOR_CAREERS.get(major, [])
     ratings = {}
+    st.subheader("2. Careers associated with your major")
+    if not careers:
+        st.caption("Choose your major above to see related careers." if major != "Other" or not major
+                   else "Add any careers you're considering in the box below.")
     if careers:
-        st.subheader("2. Careers associated with your major")
         st.write("How do you feel about each one right now?")
         for c in careers:
             col1, col2 = st.columns([2, 3])
