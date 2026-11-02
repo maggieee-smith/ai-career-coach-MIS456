@@ -192,15 +192,20 @@ def section(title: str, subtitle: str = "", eyebrow: str = ""):
 LOGO_COLORS = ["#E5484D", "#1F2BFF", "#16181D", "#00A3A3", "#F59E0B", "#8B5CF6", "#0EA5E9", "#22C55E"]
 
 
-def job_rows_html(jobs: list[tuple[str, str]], title: str = "Trending Jobs") -> str:
-    """jobs = [(job title, company)]. 'Apply' opens a live LinkedIn job search for that title at that company."""
+def job_rows_html(jobs: list, title: str = "Trending Jobs") -> str:
+    """jobs = [(title, company)] or [{title, company, sub, url}]. Tuples link to a live LinkedIn search;
+    dicts (live Adzuna postings) link to the real listing."""
     rows = []
-    for i, (t, c) in enumerate(jobs):
-        initials = "".join(w[0] for w in c.replace("&", "").split()[:2]).upper()
-        url = f"https://www.linkedin.com/jobs/search/?keywords={quote_plus(t + ' ' + c)}"
+    for i, j in enumerate(jobs):
+        if isinstance(j, dict):
+            t, c, sub, url = j["title"], j["company"], j.get("sub", j["company"]), j["url"]
+        else:
+            t, c = j
+            sub, url = c, f"https://www.linkedin.com/jobs/search/?keywords={quote_plus(t + ' ' + c)}"
+        initials = "".join(w[0] for w in c.replace("&", "").split()[:2]).upper() or "?"
         rows.append(f"""<div class="cc-job"><div class="logo" style="background:{LOGO_COLORS[i % len(LOGO_COLORS)]}">{esc(initials)}</div>
-          <div><div class="tt">{esc(t)}</div><div class="co">{esc(c)}</div></div>
-          <a href="{url}" target="_blank" rel="noopener">Apply</a></div>""")
+          <div><div class="tt">{esc(t)}</div><div class="co">{esc(sub)}</div></div>
+          <a href="{esc(url)}" target="_blank" rel="noopener">Apply</a></div>""")
     return f'<div class="cc-jobs"><div class="hd">{esc(title)}</div><div class="cc-jobgrid">{"".join(rows)}</div></div>'
 
 

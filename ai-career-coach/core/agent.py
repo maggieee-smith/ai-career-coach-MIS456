@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import json
 
-from core import config, data, documents, llm, rag
+from core import config, data, documents, jobs_api, llm, rag
 
 TOOL_SPECS = [
     {
@@ -33,6 +33,14 @@ TOOL_SPECS = [
         "description": "Get BLS pay percentiles, U.S. employment, growth, education, experience, career ladder, "
                        "and example employers for an occupation.",
         "input_schema": {"type": "object", "properties": {"title": {"type": "string"}}, "required": ["title"]},
+    },
+    {
+        "name": "search_live_jobs",
+        "description": "Search real job postings from the last 30 days (Adzuna jobs API). Returns titles, companies, "
+                       "locations, and advertised salaries. Use to check current demand for a job.",
+        "input_schema": {"type": "object", "properties": {
+            "what": {"type": "string", "description": "job title or keywords"},
+            "where": {"type": "string", "description": "optional state or city"}}, "required": ["what"]},
     },
     {
         "name": "fetch_job_posting",
@@ -60,6 +68,12 @@ class Toolbox:
             if name == "get_occupation_data":
                 o = data.get_occupation(args["title"])
                 return data.occupation_summary_text(o) if o else f"No data for '{args['title']}'."
+            if name == "search_live_jobs":
+                if not jobs_api.full_mode():
+                    return "Live job search is not available."
+                jobs, total = jobs_api.search_with_count(args["what"], args.get("where", ""), n=8)
+                lines = [f"{j['title']} | {j['company']} | {j['location']} | {jobs_api.salary_text(j)}" for j in jobs]
+                return f"{total} current postings. Recent examples:\n" + "\n".join(lines)
             if name == "fetch_job_posting":
                 return documents.fetch_url_text(args["url"])
             return f"Unknown tool {name}"
@@ -76,8 +90,9 @@ def run_agent(system: str, goal: str, toolbox: Toolbox, max_steps: int = 8, max_
 
     messages = [{"role": "user", "content": goal}]
     for _ in range(max_steps):
+        tools = [t for t in TOOL_SPECS if t["name"] != "search_live_jobs" or jobs_api.full_mode()]
         resp = llm.create_message(max_tokens=max_tokens, system=system,
-                                  tools=TOOL_SPECS, messages=messages)
+                                  tools=tools, messages=messages)
         messages.append({"role": "assistant", "content": resp.content})
         tool_calls = [b for b in resp.content if b.type == "tool_use"]
         if resp.stop_reason != "tool_use" or not tool_calls:
