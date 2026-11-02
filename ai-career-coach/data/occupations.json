@@ -1,0 +1,582 @@
+[
+ {
+  "title": "Management Analysts",
+  "aka": "Consultant / Business Analyst",
+  "soc": "13-1111",
+  "family": "Consulting",
+  "growth": null,
+  "edu": "Bachelor's degree",
+  "exp": "Less than 5 years",
+  "ladder": [
+   "Analyst / Associate",
+   "Consultant / Senior Associate",
+   "Manager",
+   "Senior Manager / Director",
+   "Partner / Principal"
+  ],
+  "companies": [
+   "Deloitte",
+   "Accenture",
+   "KPMG",
+   "EY",
+   "PwC",
+   "McKinsey",
+   "BCG",
+   "Bain",
+   "Booz Allen Hamilton",
+   "Protiviti",
+   "Slalom",
+   "Huron"
+  ],
+  "majors": [
+   "Business",
+   "MIS",
+   "Finance",
+   "Economics",
+   "Management",
+   "Accounting",
+   "Engineering"
+  ],
+  "employment": 898280,
+  "mean": 113790,
+  "p10": 60640,
+  "p25": 77950,
+  "p50": 101860,
+  "p75": 133370,
+  "p90": 171640,
+  "entry_titles": [
+   "Consulting Analyst",
+   "Business Analyst"
+  ]
+ },
+ {
+  "title": "Accountants and Auditors",
+  "aka": "Audit / Tax / Advisory Associate",
+  "soc": "13-2011",
+  "family": "Accounting",
+  "growth": null,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Staff / Associate",
+   "Senior Associate",
+   "Manager",
+   "Senior Manager",
+   "Partner"
+  ],
+  "companies": [
+   "Deloitte",
+   "PwC",
+   "EY",
+   "KPMG",
+   "Grant Thornton",
+   "RSM",
+   "BDO",
+   "Crowe",
+   "Baker Tilly",
+   "CBIZ"
+  ],
+  "majors": [
+   "Accounting",
+   "Finance",
+   "MIS",
+   "Business"
+  ],
+  "employment": 1449500,
+  "mean": 94750,
+  "p10": 56020,
+  "p25": 67020,
+  "p50": 83680,
+  "p75": 109810,
+  "p90": 144090,
+  "entry_titles": [
+   "Audit Associate",
+   "Technology Assurance Associate"
+  ]
+ },
+ {
+  "title": "Software Developers",
+  "aka": "Software Engineer",
+  "soc": "15-1252",
+  "family": "Technology",
+  "growth": 15.8,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Software Engineer I",
+   "Software Engineer II",
+   "Senior Software Engineer",
+   "Staff Engineer",
+   "Principal Engineer / Eng. Manager"
+  ],
+  "companies": [
+   "Microsoft",
+   "Google",
+   "Amazon",
+   "Intuit",
+   "Salesforce",
+   "Raytheon",
+   "Honeywell",
+   "Wells Fargo",
+   "GoDaddy",
+   "Workday"
+  ],
+  "majors": [
+   "Computer Science",
+   "MIS",
+   "Computer Engineering",
+   "Mathematics",
+   "Data Science"
+  ],
+  "employment": 1687890,
+  "mean": 148100,
+  "p10": 82460,
+  "p25": 105210,
+  "p50": 135980,
+  "p75": 171980,
+  "p90": 214670,
+  "entry_titles": [
+   "Software Engineer I",
+   "Associate Software Engineer"
+  ]
+ },
+ {
+  "title": "Registered Nurses",
+  "aka": "RN",
+  "soc": "29-1141",
+  "family": "Healthcare",
+  "growth": null,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "New Grad RN (residency)",
+   "Staff RN",
+   "Charge Nurse / Specialty RN",
+   "Nurse Manager",
+   "Director of Nursing"
+  ],
+  "companies": [
+   "Banner Health",
+   "HCA Healthcare",
+   "Mayo Clinic",
+   "Kaiser Permanente",
+   "Cleveland Clinic",
+   "Tucson Medical Center",
+   "Dignity Health",
+   "Veterans Health Administration"
+  ],
+  "majors": [
+   "Nursing",
+   "Health Sciences",
+   "Biology"
+  ],
+  "employment": 3379720,
+  "mean": 101420,
+  "p10": 68940,
+  "p25": 80330,
+  "p50": 97550,
+  "p75": 112350,
+  "p90": 137470,
+  "entry_titles": [
+   "New Grad RN",
+   "RN Residency Program"
+  ]
+ },
+ {
+  "title": "Financial and Investment Analysts",
+  "aka": "Financial Analyst / FP&A / IB Analyst",
+  "soc": "13-2051",
+  "family": "Finance",
+  "growth": null,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Analyst",
+   "Senior Analyst / Associate",
+   "Finance Manager / VP",
+   "Director",
+   "VP Finance / Managing Director"
+  ],
+  "companies": [
+   "J.P. Morgan",
+   "Goldman Sachs",
+   "Morgan Stanley",
+   "Bank of America",
+   "Wells Fargo",
+   "Fidelity",
+   "Charles Schwab",
+   "American Express",
+   "Intel",
+   "Honeywell"
+  ],
+  "majors": [
+   "Finance",
+   "Economics",
+   "Accounting",
+   "Mathematics",
+   "Business"
+  ],
+  "employment": 361980,
+  "mean": null,
+  "p10": 63720,
+  "p25": null,
+  "p50": 102740,
+  "p75": null,
+  "p90": 180860,
+  "entry_titles": [
+   "Financial Analyst",
+   "FP&A Analyst"
+  ]
+ },
+ {
+  "title": "Data Scientists",
+  "aka": "Data Scientist / Analytics",
+  "soc": "15-2051",
+  "family": "Technology",
+  "growth": 34,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Data Analyst / Junior DS",
+   "Data Scientist",
+   "Senior Data Scientist",
+   "Lead / Staff Data Scientist",
+   "Head of Data Science"
+  ],
+  "companies": [
+   "Amazon",
+   "Meta",
+   "Google",
+   "Capital One",
+   "Microsoft",
+   "Walmart Global Tech",
+   "Netflix",
+   "UnitedHealth Group",
+   "Deloitte"
+  ],
+  "majors": [
+   "Data Science",
+   "Statistics",
+   "Computer Science",
+   "MIS",
+   "Mathematics",
+   "Economics"
+  ],
+  "employment": 262440,
+  "mean": null,
+  "p10": 67240,
+  "p25": null,
+  "p50": 120230,
+  "p75": null,
+  "p90": 199130,
+  "entry_titles": [
+   "Data Analyst",
+   "Junior Data Scientist"
+  ]
+ },
+ {
+  "title": "Information Security Analysts",
+  "aka": "Cybersecurity Analyst",
+  "soc": "15-1212",
+  "family": "Technology",
+  "growth": 28.5,
+  "edu": "Bachelor's degree",
+  "exp": "Less than 5 years",
+  "ladder": [
+   "SOC / Security Analyst I",
+   "Security Analyst II",
+   "Senior Security Engineer",
+   "Security Architect / Manager",
+   "CISO / Director of Security"
+  ],
+  "companies": [
+   "CrowdStrike",
+   "Palo Alto Networks",
+   "Raytheon",
+   "Lockheed Martin",
+   "Booz Allen Hamilton",
+   "Deloitte",
+   "KPMG",
+   "Microsoft",
+   "Northrop Grumman"
+  ],
+  "majors": [
+   "Cybersecurity",
+   "MIS",
+   "Computer Science",
+   "Information Science"
+  ],
+  "employment": 182800,
+  "mean": 132510,
+  "p10": 75090,
+  "p25": 97810,
+  "p50": 129180,
+  "p75": 163500,
+  "p90": 199850,
+  "entry_titles": [
+   "Cybersecurity Analyst",
+   "SOC Analyst"
+  ]
+ },
+ {
+  "title": "Market Research Analysts and Marketing Specialists",
+  "aka": "Marketing Analyst / Specialist",
+  "soc": "13-1161",
+  "family": "Marketing",
+  "growth": 7,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Marketing Coordinator / Analyst",
+   "Marketing Specialist",
+   "Marketing Manager",
+   "Senior Manager / Director",
+   "VP / CMO"
+  ],
+  "companies": [
+   "Procter & Gamble",
+   "PepsiCo",
+   "Nielsen",
+   "Ipsos",
+   "Google",
+   "Nike",
+   "Unilever",
+   "Kantar",
+   "Ogilvy"
+  ],
+  "majors": [
+   "Marketing",
+   "Business",
+   "Communications",
+   "Psychology",
+   "Economics"
+  ],
+  "employment": 899580,
+  "mean": null,
+  "p10": 43390,
+  "p25": null,
+  "p50": 78760,
+  "p75": null,
+  "p90": 155480,
+  "entry_titles": [
+   "Marketing Analyst",
+   "Market Research Analyst"
+  ]
+ },
+ {
+  "title": "Public Relations Specialists",
+  "aka": "PR / Communications Specialist",
+  "soc": "27-3031",
+  "family": "Communications",
+  "growth": 5,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "PR Coordinator / Assistant Account Exec",
+   "Account Executive / Specialist",
+   "Senior Specialist / Account Supervisor",
+   "Communications Manager",
+   "Director / VP Communications"
+  ],
+  "companies": [
+   "Edelman",
+   "Weber Shandwick",
+   "FleishmanHillard",
+   "Ketchum",
+   "Apple",
+   "Nike",
+   "Disney",
+   "Golin"
+  ],
+  "majors": [
+   "Communications",
+   "Journalism",
+   "Marketing",
+   "English",
+   "Business"
+  ],
+  "employment": 283380,
+  "mean": null,
+  "p10": 44110,
+  "p25": null,
+  "p50": 74750,
+  "p75": null,
+  "p90": 135150,
+  "entry_titles": [
+   "PR Coordinator",
+   "Communications Specialist"
+  ]
+ },
+ {
+  "title": "Human Resources Specialists",
+  "aka": "HR Generalist / Recruiter",
+  "soc": "13-1071",
+  "family": "People",
+  "growth": 6,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "HR Coordinator / Recruiter",
+   "HR Generalist / Specialist",
+   "HR Business Partner",
+   "HR Manager",
+   "HR Director / CHRO"
+  ],
+  "companies": [
+   "ADP",
+   "Workday",
+   "Amazon",
+   "Target",
+   "Deloitte",
+   "Robert Half",
+   "Randstad",
+   "Mercer"
+  ],
+  "majors": [
+   "Human Resources",
+   "Management",
+   "Psychology",
+   "Business",
+   "Communications"
+  ],
+  "employment": 912430,
+  "mean": null,
+  "p10": 47180,
+  "p25": null,
+  "p50": 75940,
+  "p75": null,
+  "p90": 128720,
+  "entry_titles": [
+   "HR Coordinator",
+   "Recruiting Coordinator"
+  ]
+ },
+ {
+  "title": "Personal Financial Advisors",
+  "aka": "Wealth Management Advisor",
+  "soc": "13-2052",
+  "family": "Finance",
+  "growth": 10,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Client Associate / Financial Advisor Trainee",
+   "Financial Advisor",
+   "Senior Financial Advisor",
+   "Wealth Manager / Partner",
+   "Managing Director / Practice Owner"
+  ],
+  "companies": [
+   "Edward Jones",
+   "Merrill Lynch",
+   "Morgan Stanley Wealth Management",
+   "Charles Schwab",
+   "Fidelity",
+   "Northwestern Mutual",
+   "Ameriprise",
+   "Vanguard"
+  ],
+  "majors": [
+   "Finance",
+   "Economics",
+   "Business",
+   "Accounting"
+  ],
+  "employment": 266800,
+  "mean": null,
+  "p10": 50190,
+  "p25": null,
+  "p50": 105070,
+  "p75": null,
+  "p90": 357020,
+  "entry_titles": [
+   "Financial Advisor Trainee",
+   "Client Associate"
+  ]
+ },
+ {
+  "title": "Database Administrators",
+  "aka": "DBA / Data Engineer track",
+  "soc": "15-1242",
+  "family": "Technology",
+  "growth": -1,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Junior DBA / Data Analyst",
+   "Database Administrator",
+   "Senior DBA",
+   "Data Architect",
+   "Director of Data Platforms"
+  ],
+  "companies": [
+   "Oracle",
+   "Microsoft",
+   "Amazon Web Services",
+   "IBM",
+   "State Farm",
+   "USAA",
+   "Banner Health",
+   "Snowflake"
+  ],
+  "majors": [
+   "MIS",
+   "Computer Science",
+   "Information Science",
+   "Data Science"
+  ],
+  "employment": 69990,
+  "mean": null,
+  "p10": 60230,
+  "p25": null,
+  "p50": 104620,
+  "p75": null,
+  "p90": 163320,
+  "entry_titles": [
+   "Junior Database Administrator",
+   "Data Engineer I"
+  ]
+ },
+ {
+  "title": "Electrical Engineers",
+  "aka": "Electrical Engineer",
+  "soc": "17-2071",
+  "family": "Engineering",
+  "growth": 7,
+  "edu": "Bachelor's degree",
+  "exp": "None",
+  "ladder": [
+   "Engineer I",
+   "Engineer II",
+   "Senior Engineer",
+   "Principal Engineer / Engineering Manager",
+   "Director of Engineering"
+  ],
+  "companies": [
+   "Intel",
+   "Raytheon",
+   "Texas Instruments",
+   "Lockheed Martin",
+   "Tesla",
+   "Boeing",
+   "Honeywell",
+   "Salt River Project"
+  ],
+  "majors": [
+   "Electrical Engineering",
+   "Computer Engineering",
+   "Physics"
+  ],
+  "employment": 198750,
+  "mean": null,
+  "p10": 76550,
+  "p25": null,
+  "p50": 120630,
+  "p75": null,
+  "p90": 184300,
+  "entry_titles": [
+   "Electrical Engineer I",
+   "Associate Electrical Engineer"
+  ]
+ }
+]
